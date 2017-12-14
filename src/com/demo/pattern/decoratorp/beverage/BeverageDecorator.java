@@ -3,6 +3,10 @@ package com.demo.pattern.decoratorp.beverage;
 public abstract class BeverageDecorator implements IBeverage {
 	
 	private IBeverage beverage;
+	
+	public BeverageDecorator() {
+		super();
+	}
 
 	public BeverageDecorator(IBeverage beverage) {
 		super();

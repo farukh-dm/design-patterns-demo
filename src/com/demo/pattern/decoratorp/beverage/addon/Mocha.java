@@ -4,7 +4,11 @@ import com.demo.pattern.decoratorp.beverage.BeverageDecorator;
 import com.demo.pattern.decoratorp.beverage.IBeverage;
 
 public class Mocha extends BeverageDecorator {
-
+	
+	public Mocha() {
+		super();
+	}
+	
 	public Mocha(IBeverage beverage) {
 		super(beverage);
 	}

@@ -4,7 +4,11 @@ import com.demo.pattern.decoratorp.beverage.BeverageDecorator;
 import com.demo.pattern.decoratorp.beverage.IBeverage;
 
 public class Decaf extends BeverageDecorator {
-
+	
+	public Decaf() {
+		super();
+	}
+	
 	public Decaf(IBeverage beverage) {
 		super(beverage);
 	}

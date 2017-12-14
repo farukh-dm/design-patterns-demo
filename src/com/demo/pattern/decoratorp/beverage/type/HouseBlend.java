@@ -4,7 +4,11 @@ import com.demo.pattern.decoratorp.beverage.BeverageDecorator;
 import com.demo.pattern.decoratorp.beverage.IBeverage;
 
 public class HouseBlend extends BeverageDecorator {
-
+	
+	public HouseBlend() {
+		super();
+	}
+	
 	public HouseBlend(IBeverage beverage) {
 		super(beverage);
 	}

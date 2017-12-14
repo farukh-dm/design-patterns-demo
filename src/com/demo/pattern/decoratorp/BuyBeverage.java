@@ -13,24 +13,24 @@ public class BuyBeverage {
 	public static void main(String[] args) {
 		
 		// Buy only DarkRoast
-		IBeverage firstCoffee = new DarkRoast(null);
+		IBeverage firstCoffee = new DarkRoast();
 		System.out.println(firstCoffee.getDescription() + " : " + firstCoffee.getPrice());
 		
 		// Buy only Milk
-		IBeverage milk = new Milk(null);
+		IBeverage milk = new Milk();
 		System.out.println(milk.getDescription() + " : " + milk.getPrice());
 		
 		// Buy Expresso + Whip
-		IBeverage expressoAndWhip = new Expresso(new Whip(null));
+		IBeverage expressoAndWhip = new Expresso(new Whip());
 		System.out.println(expressoAndWhip.getDescription() + " : " + expressoAndWhip.getPrice());
 		
 		// Buy HouseBlend + Soy
-		IBeverage houseBlendAndSoy = new HouseBlend(new Soy(null));
+		IBeverage houseBlendAndSoy = new HouseBlend(new Soy());
 		System.out.println(houseBlendAndSoy.getDescription() + " : " + houseBlendAndSoy.getPrice());
 		
 		// Buy HouseBlend + Soy + Milk
-				IBeverage houseBlendAndSoyAndMilk = new HouseBlend(new Soy(new Milk(null)));
-				System.out.println(houseBlendAndSoyAndMilk.getDescription() + " : " + houseBlendAndSoyAndMilk.getPrice());
+		IBeverage houseBlendAndSoyAndMilk = new HouseBlend(new Soy(new Milk()));
+		System.out.println(houseBlendAndSoyAndMilk.getDescription() + " : " + houseBlendAndSoyAndMilk.getPrice());
 		
 	}
 

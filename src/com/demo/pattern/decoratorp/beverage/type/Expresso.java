@@ -4,7 +4,11 @@ import com.demo.pattern.decoratorp.beverage.BeverageDecorator;
 import com.demo.pattern.decoratorp.beverage.IBeverage;
 
 public class Expresso extends BeverageDecorator {
-
+	
+	public Expresso() {
+		super();
+	}
+	
 	public Expresso(IBeverage beverage) {
 		super(beverage);
 	}

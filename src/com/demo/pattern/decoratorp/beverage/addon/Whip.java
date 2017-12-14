@@ -4,7 +4,11 @@ import com.demo.pattern.decoratorp.beverage.BeverageDecorator;
 import com.demo.pattern.decoratorp.beverage.IBeverage;
 
 public class Whip extends BeverageDecorator {
-
+	
+	public Whip() {
+		super();
+	}
+	
 	public Whip(IBeverage beverage) {
 		super(beverage);
 	}

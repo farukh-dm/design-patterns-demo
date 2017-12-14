@@ -4,7 +4,11 @@ import com.demo.pattern.decoratorp.beverage.BeverageDecorator;
 import com.demo.pattern.decoratorp.beverage.IBeverage;
 
 public class DarkRoast extends BeverageDecorator {
-
+	
+	public DarkRoast() {
+		super();
+	}
+	
 	public DarkRoast(IBeverage beverage) {
 		super(beverage);
 	}
