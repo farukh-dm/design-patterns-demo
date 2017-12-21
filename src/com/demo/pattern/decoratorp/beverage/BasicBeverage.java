@@ -12,4 +12,9 @@ public class BasicBeverage implements IBeverage {
 		return 0;
 	}
 
+	@Override
+	public void setBeverageItem(IBeverage beverage) {
+		
+	}
+
 }

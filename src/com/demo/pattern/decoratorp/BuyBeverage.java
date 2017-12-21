@@ -1,5 +1,6 @@
 package com.demo.pattern.decoratorp;
 
+import com.demo.pattern.builderp.BeverageBuilder;
 import com.demo.pattern.decoratorp.beverage.IBeverage;
 import com.demo.pattern.decoratorp.beverage.addon.Milk;
 import com.demo.pattern.decoratorp.beverage.addon.Soy;
@@ -31,6 +32,19 @@ public class BuyBeverage {
 		// Buy HouseBlend + Soy + Milk
 		IBeverage houseBlendAndSoyAndMilk = new HouseBlend(new Soy(new Milk()));
 		System.out.println(houseBlendAndSoyAndMilk.getDescription() + " : " + houseBlendAndSoyAndMilk.getPrice());
+		
+		// Builder
+		BeverageBuilder builder = new BeverageBuilder();
+		IBeverage beverage = builder.addDarkRoast().addMilk().build();
+		System.out.println(beverage.getDescription() + " : " + beverage.getPrice());
+		
+		builder = new BeverageBuilder();
+		beverage = builder.addMilk().build();
+		System.out.println(beverage.getDescription() + " : " + beverage.getPrice());
+		
+		builder = new BeverageBuilder();
+		beverage = builder.addDarkRoast().addMilk().addDarkRoast().addMilk().build();
+		System.out.println(beverage.getDescription() + " : " + beverage.getPrice());
 		
 	}
 

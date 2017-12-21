@@ -12,6 +12,11 @@ public abstract class BeverageDecorator implements IBeverage {
 		super();
 		this.beverage = beverage;
 	}
+	
+	@Override
+	public void setBeverageItem(IBeverage beverage) {
+		this.beverage = beverage;
+	}
 
 	@Override
 	public String getDescription() {

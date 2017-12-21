@@ -6,4 +6,6 @@ public interface IBeverage {
 	
 	public int getPrice();
 
+	void setBeverageItem(IBeverage beverage);
+
 }
